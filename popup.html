@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sessize Alma</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            width: 300px; 
+            position: relative; 
+            padding-bottom: 60px; 
+        }
+        h1 {
+            color: #0070a1;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #0070a1;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005f7f;
+        }
+        #settings {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        #stats {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+            color: #0070a1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            position: absolute;
+            bottom: 0; 
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px; 
+            padding: 10px 0; 
+            background-color: #f4f4f4; 
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1); 
+        }
+        footer a {
+            color: #0070a1; 
+            text-decoration: none; 
+        }
+        footer a:hover {
+            text-decoration: underline; 
+        }
+        footer img {
+            width: 16px; 
+            vertical-align: middle; 
+            margin-right: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Facebook Mute Utility</h1>
+    <p>Adjust your settings to hide unwanted content and users.</p>
+    <button id="settingsButton">Settings</button>
+    <div id="settings">
+        <label>
+            Words and Users to Hide (separate with commas):
+            <input type="text" id="keywordsInput" placeholder="ex: words, user123" />
+        </label>
+        <button id="saveButton">Save Settings</button>
+    </div>
+    <div id="stats"></div>
+    <script src="popup.js"></script>
+</body>
+<footer>
+    <a href="https://github.com/bluenchanter" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo">
+        <span style="color: #1b1f23;">@bluenchanter</span> 
+    </a>
+</footer>
+</html>
